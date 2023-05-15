@@ -7,7 +7,7 @@
     <title>CRUD</title>
   </head>
   <h1>Listagem de Usuários</h1>
-  <p><a href="/inserir.html">INSERIR NOVO USUÁRIO</a></p>
+  <p><a href="/inserir.html">INSERIR NOVO CURRÍCULO</a></p>
 
   <script>
     const url = '/usuarios';
@@ -20,9 +20,9 @@
         let usuarios = data;
         let saida = '';
         usuarios.map(function(usuario) {
-          saida += '<strong> '+ `${usuario.nome_completo}` + '</strong> ' + `${usuario.email}`  + ' - ' +  `${usuario.telefone}`;
-          saida += ' - <a href="/atualizar.html?userId=' + `${usuario.userId}` + '">EDITAR</a>';
-          saida += ' | <a href="/removeUsuario?userId='+`${usuario.userId}`+'">REMOVER</a></br>';
+          saida += '<strong>Nome: </strong>'+ `${usuario.nome}` +'<strong> Descrição:  </strong>'+ `${usuario.descricao_sobre_mim}` +'<strong> Cargo desejado:  </strong>'+ `${usuario.cargo_desejado}` + '<strong> Email: </strong>' + `${usuario.email}`  + '<strong> - Número: </strong>' +  `${usuario.numero}`;
+          saida += ' - <a href="/atualizar.html?id=' + `${usuario.id}` + '">EDITAR</a>';
+          saida += ' | <a href="/deletarCurriculo?id='+`${usuario.id}`+'">REMOVER</a></br>';
         });
         document.getElementById('resultado').innerHTML = saida;
       })
