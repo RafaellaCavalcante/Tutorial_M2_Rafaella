@@ -50,10 +50,14 @@ app.post('/inserir', urlencodedParser, (req, res) => {
 
 // Monta o formulário para o update (é o U do CRUD - Update)
 app.get('/atualizarCurriculo', (req, res) => {
+	//condição de que está funcionando
 	res.statusCode = 200;
+	//cabeçalho da requisição
 	res.setHeader('Access-Control-Allow-Origin', '*'); 
-	sql = "SELECT * FROM sobre_mim WHERE id="+ req.query.id;
-	console.log(sql);
+	//seleciona todas as colunas da tabela sobre_mim 
+	sql = "SELECT * FROM sobre_mim WHERE id="+ req.query.id; 
+
+	console.log(sql); 
 	var db = new sqlite3.Database(DBPATH); // Abre o banco
 	db.all(sql, [],  (err, rows ) => {
 		if (err) {
