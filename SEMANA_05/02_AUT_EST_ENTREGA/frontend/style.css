@@ -1,112 +1,86 @@
-#navegador{
+/* Estilos para a navbar responsiva */
+.navbar-brand {
+    color: transparent;
+    -webkit-background-clip: text;
     background-image: linear-gradient(to right, #FE3897, #00B3F6, #5734FD);
-    position: fixed;
-    z-index: 1;
-}
-
-#welcome{
-    color: #fff;
     font-weight: 500;
 }
-
-#casa{
+  
+.navbar-nav .nav-link {
     color: #fff;
-}
-#casa:hover{
-    background-color: #fff;
-    color: #FE3897;
-}
-
-#mim{
-    color: #fff;
-}
-#mim:hover{
-    background-color: #fff;
-    color: #FE3897;
-}
-
-#proj{
-    color: #fff;
-}
-#proj:hover{
-    background-color: #fff;
-    color: #FE3897;
-}
-
-#cont{
-    color: #fff;
-}
-
-#cont:hover{
-    background-color: #fff;
-    color: #FE3897;
-}
-
-#rafa{
-    position: relative;
-    top: 20px;
-    left: 1%;
-    width: 300px;
-    height: 300px;
-    border-radius: 50%;
-}
-
-.sobre{
-    color: #8a869b;
-    font-size: medium;
-}
-
-.container {
-    clear:both;
-}
-
-.info{
-    color: #2f383a;
-    font-size:20px;
 }
   
-img {
-    float: left;
-}
-  
-h1 {
-    float: left;
-    position: relative;
-    top: 50px;
-    left: 5%;
-    background-clip: text;
+.navbar-nav .nav-link:hover {
     color: transparent;
     -webkit-background-clip: text;
     background-image: linear-gradient(to right, #FE3897, #00B3F6, #5734FD);
 }
 
-h2 {
-    float: left;
-    position: relative;
-    left: 5%;
-    top: 50px;
+#rafa {
+    margin: 0 auto; /* Adiciona margem automática nos lados esquerdo e direito */
+    display: block;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%; /* Define a imagem como um bloco para que a margem automática funcione */
 }
 
-h3 {
-    margin-top: 10%;
-    margin-left: 7%;
-    color: #00B3F6;
+#div1, h2{
+    padding-top: 59px;
 }
 
-p {
-    position: relative;
-    float: left;
-    left: 5%;
-    right: 5%;
-    width: 1100px;
-    height: 100px;
-    top: 50px;
+#div1 h1{
+    color: transparent;
+    -webkit-background-clip: text;
+    background-image: linear-gradient(to right, #FE3897, #00B3F6, #5734FD);
+}
+
+  /* Estilos para o conteúdo da seção "div2" */
+#div2 .container {
+    clear: both;
+}
+  
+#div2 h1, #div2 h2, #div2 h3 {
+    margin-top: 50px;
+    margin-left: 5%;
+    color: #FE3897;
+}
+  
+#div2 p {
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 30px;
     text-align: justify;
-    font-size: larger;
+    font-size: 16px;
     font-weight: 500;
     color: #555265;
 }
+  
+#div2 .info {
+    color: #2f383a;
+    font-size: 20px;
+}
+  
+  /* Estilos para o rodapé */
+footer {
+    background-color: #f8f9fa;
+    padding: 20px 0;
+}
+  
+footer p {
+    text-align: center;
+    font-size: 14px;
+    color: #555265;
+}
 
-body {
-    padding-top: 6px; /* Adicione um padding no topo do corpo para evitar que o conteúdo fique oculto pela navbar fixa */
+@keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+}
+  
+.fade-in {
+    animation: fadeIn 1s ease-in;
 }
