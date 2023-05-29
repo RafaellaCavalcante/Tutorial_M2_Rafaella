@@ -1,0 +1,132 @@
+body{
+    background-color: #fff;
+    color: #2f2f2f;
+}
+
+body.modo-escuro {
+    background-color: #19191a;
+    color: #fff;
+}
+
+body.modo-escuro #div2 .sobre, body.modo-escuro #div2 .info {
+  color: #fff;
+}
+
+body.modo-escuro .navbar-brand {
+    color: #fff;
+}
+  
+body.modo-escuro .navbar-nav .nav-link {
+    color: #fff;
+}
+
+body.modo-escuro .navbar {
+    background-color: #19191a !important;
+}
+
+body.modo-escuro .navbar-nav .nav-link:hover {
+    color: transparent;
+    -webkit-background-clip: text;
+    background-image: linear-gradient(to right, #FE3897, #00B3F6, #5734FD);
+    font-weight: 500;
+}
+
+body.modo-escuro footer{
+    background-color: #19191a;
+}
+
+body.modo-escuro .navbar-brand {
+    color: transparent;
+    -webkit-background-clip: text;
+    background-image: linear-gradient(to right, #FE3897, #00B3F6, #5734FD);
+    font-weight: 500;
+}
+
+/* Estilos para a navbar responsiva */
+.navbar-brand {
+    color: transparent;
+    -webkit-background-clip: text;
+    background-image: linear-gradient(to right, #FE3897, #00B3F6, #5734FD);
+    font-weight: 500;
+}
+  
+.navbar-nav .nav-link {
+    color: #fff;
+}
+  
+.navbar-nav .nav-link:hover {
+    color: transparent;
+    -webkit-background-clip: text;
+    background-image: linear-gradient(to right, #FE3897, #00B3F6, #5734FD);
+}
+
+#rafa {
+    margin: 0 auto; /* Adiciona margem automática nos lados esquerdo e direito */
+    display: block;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%; /* Define a imagem como um bloco para que a margem automática funcione */
+}
+
+#div1, h2{
+    padding-top: 59px;
+}
+
+#div1 h1{
+    color: transparent;
+    -webkit-background-clip: text;
+    background-image: linear-gradient(to right, #FE3897, #00B3F6, #5734FD);
+}
+
+  /* Estilos para o conteúdo da seção "div2" */
+#div2 .container {
+    clear: both;
+}
+  
+#div2 h1, #div2 h2, #div2 h3 {
+    margin-top: 50px;
+    margin-left: 5%;
+    color: #FE3897;
+}
+  
+#div2 p {
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 30px;
+    text-align: justify;
+    font-size: 16px;
+    font-weight: 500;
+    color: #555265;
+}
+  
+#div2 .info {
+    color: #2f383a;
+    font-size: 20px;
+}
+  
+  /* Estilos para o rodapé */
+footer {
+    background-color: #f8f9fa;
+    padding: 20px 0;
+}
+  
+footer p {
+    text-align: center;
+    font-size: 14px;
+    color: #555265;
+}
+
+.fade-in-text {
+    animation: fadeInText 1s ease-in;
+  }
+  
+@keyframes fadeInText {
+    0% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+}
